@@ -11,5 +11,6 @@
         "editor.codeActionsOnSave": {
             "source.organizeImports": true
         }
-    }
+    },
+    "workbench.iconTheme": "vscode-icons"
 }
