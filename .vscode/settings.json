@@ -12,5 +12,6 @@
             "source.organizeImports": true
         }
     },
-    "workbench.iconTheme": "vscode-icons"
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.colorTheme": "Dracula"
 }

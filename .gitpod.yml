@@ -15,3 +15,4 @@ vscode:
     - ms-python.vscode-pylance
     - cweijan.vscode-database-client2
     - vscode-icons-team.vscode-icons
+    - dracula-theme.theme-dracula
