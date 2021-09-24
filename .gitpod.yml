@@ -5,9 +5,9 @@ image:
 #   - port: 5000
 #     onOpen: open-preview
 
-# tasks:
-#   - init: poetry install
-#     command: python src/main.py
+tasks:
+  - init: poetry install
+    command: python src/main.py
 
 vscode:
   extensions:
