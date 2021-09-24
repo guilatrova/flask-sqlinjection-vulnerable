@@ -13,5 +13,6 @@
         }
     },
     "workbench.iconTheme": "vscode-icons",
-    "workbench.colorTheme": "Dracula"
+    "workbench.colorTheme": "Dracula",
+    "workbench.startupEditor": "readme"
 }
