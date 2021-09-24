@@ -9,9 +9,9 @@ image:
 #   - init: poetry install
 #     command: python src/main.py
 
-# vscode:
-#   extensions:
-#     - ms-python.python
-#     - ms-python.vscode-pylance
-#     - cweijan.vscode-database-client2
-#     - vscode-icons-team.vscode-icons
+vscode:
+  extensions:
+    - ms-python.python
+    - ms-python.vscode-pylance
+    - cweijan.vscode-database-client2
+    - vscode-icons-team.vscode-icons
