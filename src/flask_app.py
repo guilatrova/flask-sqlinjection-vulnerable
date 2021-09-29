@@ -14,8 +14,15 @@ def index():
     )
 
 
+def sanitize_input(raw: str) -> str:
+    CLEAR = ""
+    return raw.replace("'", CLEAR).replace("--", CLEAR).replace(";", CLEAR)
+
+
 @app.route("/challenges/<cpf>")
 def get_challenges(cpf: str):
+    cpf = sanitize_input(cpf)
+
     print(f"[bold]{'-' * 50}[/bold]")
     print(f"[bold]Passing input:[/bold] [yellow]{cpf}[/yellow]")
 
