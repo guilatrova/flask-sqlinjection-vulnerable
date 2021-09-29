@@ -12,7 +12,7 @@ tasks:
 vscode:
   extensions:
     - ms-python.python
-    - ms-python.vscode-pylance
     - cweijan.vscode-database-client2
+    - rangav.vscode-thunder-client
     - vscode-icons-team.vscode-icons
     - dracula-theme.theme-dracula
