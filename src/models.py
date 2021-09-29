@@ -6,18 +6,19 @@ from typing import Optional
 @dataclass
 class User:
     id: int
-    email: str
     cpf: str
-    data_nascimento: str = "01-01-1990"
-    telefone: str = "1234567899"
+    email: str
+    birth_date: str = "01-01-1990"
+    phone_number: str = "1234567899"
 
 
 @dataclass
 class Challenge:
-    usuario_id: int
+    user_id: int
     title: str
-    pontos: int = field(init=False)
+    score: int = field(init=False)
     id: Optional[int] = None
 
     def __post_init__(self):
-        self.pontos = random.randint(0, 10)
+        # We don't care about score, we just want random values
+        self.score = random.randint(0, 10)

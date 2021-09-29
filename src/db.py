@@ -31,14 +31,16 @@ def connection_context():
     conn.close()
 
 
-def get_desafios_candidato(cpf: str) -> List[Any]:
+def get_challenges_for_candidate(cpf: str) -> List[Any]:
     query = f"""
-        SELECT title, pontos FROM desafio d
-        JOIN usuario u
-        ON u.id = d.usuario_id
+        SELECT title, score FROM challenges c
+        JOIN users u
+        ON u.id = c.user_id
         WHERE u.cpf='{cpf}';
     """
-    logging.info(f"Executando query: '{query}'")
+    print("-" * 50)
+    print(f"Executing query: {query}")
+    print("-" * 50)
 
     with connection_context() as cur:
         cur.execute(query)
