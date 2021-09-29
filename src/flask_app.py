@@ -1,4 +1,5 @@
 from flask import Flask
+from rich import print
 
 from db import get_challenges_for_candidate
 
@@ -15,9 +16,8 @@ def index():
 
 @app.route("/challenges/<cpf>")
 def get_challenges(cpf: str):
-    print("-" * 50)
-    print(f"Passing input: {cpf}")
-    print("-" * 50)
+    print(f"[bold]{'-' * 50}[/bold]")
+    print(f"[bold]Passing input:[/bold] [yellow]{cpf}[/yellow]")
 
     challenges = get_challenges_for_candidate(cpf)
     output = [f"<li>{title}: scored {score}</li>" for title, score in challenges]
@@ -27,4 +27,4 @@ def get_challenges(cpf: str):
             <pre><blockquote>{cpf}</blockquote></pre>
         </p>
     """
-    return f"{disclaimer}<br/><ol>{''.join(output)}</ol>"
+    return f"{disclaimer}<br/><h3>Results</h3><ol>{''.join(output)}</ol>"

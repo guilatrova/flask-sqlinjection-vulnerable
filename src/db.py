@@ -4,6 +4,8 @@ import os
 import sqlite3
 from typing import Any, List
 
+from rich import print
+
 logger = logging.getLogger(__name__)
 
 DB_FILENAME = os.path.realpath("data/test.db")
@@ -39,8 +41,8 @@ def get_challenges_for_candidate(cpf: str) -> List[Any]:
         WHERE u.cpf='{cpf}';
     """
     print("-" * 50)
-    print(f"Executing query: {query}")
-    print("-" * 50)
+    print(f"[bold]Executing query:[/bold] [green]{query}[/green]")
+    print(f"[bold]{'-' * 50}[/bold]")
 
     with connection_context() as cur:
         cur.execute(query)
