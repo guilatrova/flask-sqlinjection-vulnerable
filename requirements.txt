@@ -1,4 +1,5 @@
 Flask==2.0.1
+rich==10.11.0
 black==21.9b0
 flake8==3.9.2
 isort==5.9.3
