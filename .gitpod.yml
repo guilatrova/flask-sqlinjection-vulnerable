@@ -12,6 +12,6 @@ vscode:
   extensions:
     - ms-python.python
     - cweijan.vscode-database-client2
-    - rangav.vscode-thunder-client
+    - https://github.com/guilatrova/flask-sqlinjection-vulnerable/raw/main/thunder-client-1.9.1.vsix
     - vscode-icons-team.vscode-icons
     - dracula-theme.theme-dracula
