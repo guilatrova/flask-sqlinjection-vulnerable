@@ -8,7 +8,7 @@
 
 The purpose of this repository is to allow us to explore an API vulnerable to SQL Injection (using Python, Flask, and SQLite).
 
-You're free to play with it as is, but you might have more fun doing it alongside me in a blog post: (TODO: ADD LINK HERE).
+You're free to play with it as is, but you might have more fun doing it alongside me in a blog post: https://blog.guilatrova.dev/how-sql-injection-attack-works-with-examples/.
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/guilatrova/flask-sqlinjection-vulnerable/)
 
