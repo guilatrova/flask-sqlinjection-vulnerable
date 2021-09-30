@@ -3,6 +3,7 @@ image:
 
 ports:
   - port: 5000
+    visibility: public
     onOpen: open-preview
 
 tasks:
